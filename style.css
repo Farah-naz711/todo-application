@@ -16,13 +16,17 @@ purple : #8B5Cf6 */
 body{
     background-color: #374151;
     text-align: center;
-    background-image: url(https://wallpapercave.com/wp/wp2757834.gif);
-    background-repeat:no-repeat;
-    background-size: cover;
+    /* background-image: url(https://wallpapercave.com/wp/wp2757834.gif); */
+    /* background-image: url(bgImg.webm) ; */
+    
     /* background-position: cent; */
 }
 .outer-box{
     width: 100%;
+    background-image: url(bgimg1.gif);
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 h1{
     color: #6B7280;
@@ -36,7 +40,7 @@ section{
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
    /* box-shadow: rgba(81, 76, 76, 0.24) 0px 3px 8px; */
    
-   padding: 0 10px;
+   padding: 10px;
    background-color: rgba(0, 0,0 , 0.6);
    border-radius: 16px;
    /* background-color: #1F2937; */
@@ -46,10 +50,11 @@ table{
     text-align: center;
 }
 td{
-    padding: 8px 12px;
+    padding: 10px ;
 }
 td:hover{
-    background-color: #374151;
+    /* background-color: #374151; */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 tr{
     
@@ -60,15 +65,16 @@ tr{
  
 }
 input{
-    padding: 7px;
+    
     border: none;
     outline: none;
-    width: 62%;
+    width: 100%;
     
 color: #6B7280;
     
 
-    background-color: #374151;
+    /* background-color: #374151; */
+    background-color: transparent;
     /* background-color: #70a0cb; */
     /* background-color: #6B7280; */
 }
@@ -115,15 +121,16 @@ border: 1px solid #008CBA;
       margin: 0 auto;
         
     }
-    
-    /* input{
-        width: 68%;
-        padding: 4px;
-    }
-    .form-div button{
-        padding: 6px 8px !important;
-    } */
 }
+    @media only screen and (max-width:1020px){
+    input{
+       font-size: small;
+    }
+    /* .form-div button{
+        padding: 6px 8px !important;
+         */
+    }
+
 .scale-up-bl{-webkit-animation:scale-up-bl .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-bl .4s cubic-bezier(.39,.575,.565,1.000) both}
 
 /* ----------------------------------------------

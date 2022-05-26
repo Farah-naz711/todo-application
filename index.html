@@ -20,15 +20,28 @@
 
         <section class="mt-4 scale-up-bl container my-3 ">
 
-            <h1 class="animate__animated animate__backInUp font-weight-bold">Todo</h1>
-        <h1 class="animate__animated animate__backInDown font-weight-bold">App</h1>
+            <h1 class="animate__animated animate__backInUp font-weight-bold">Add Your</h1>
+        <h1 class="animate__animated animate__backInDown font-weight-bold">Daily Task</h1>
         
         <!-- <div> -->
             <form onsubmit="return false"  class=" form-div ">
+<table border="1">
+    <tr>
+        <td>
+            <input type="text" placeholder="What do you have planned?" name="todo" id="todo-item">
+        </td>
+        <td>
+            <button type="submit" onclick="addItem()" class="btn addbtn my-2">Add</button>
+        </td>
+        <td>
+           <button type="submit" onclick="deleteAll()" class="btn deleteAllbtn">DA</button>
+        </td>
 
-                <input type="text" placeholder="What do you have planned?" name="todo" id="todo-item">
-                <button type="submit" onclick="addItem()" class="btn addbtn my-2">Add</button>
-                <button type="submit" onclick="deleteAll()" class="btn deleteAllbtn">Delete All</button>
+    </tr>
+</table>
+                <!-- <input type="text" placeholder="What do you have planned?" name="todo" id="todo-item"> -->
+                <!-- <button type="submit" onclick="addItem()" class="btn addbtn my-2">Add</button> -->
+                <!-- <button type="submit" onclick="deleteAll()" class="btn deleteAllbtn">Delete All</button> -->
             </form>
 
         <!-- </div> -->
