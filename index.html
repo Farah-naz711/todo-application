@@ -11,6 +11,10 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
@@ -21,14 +25,13 @@
         <section class="mt-4 scale-up-bl container my-3 ">
 
             <h1 class="animate__animated animate__backInUp font-weight-bold">Add Your</h1>
-        <h1 class="animate__animated animate__backInDown font-weight-bold">Daily Task</h1>
+        <h1 class="animate__animated animate__backInDown font-weight-bold">Daily Tasks</h1>
         
-        <!-- <div> -->
             <form onsubmit="return false"  class=" form-div ">
-<table border="1">
+<table >
     <tr>
         <td>
-            <input type="text" placeholder="What do you have planned?" name="todo" id="todo-item">
+            <input type="text" placeholder="What do you have planned?" autofocus name="todo" id="todo-item">
         </td>
         <td>
             <button type="submit" onclick="addItem()" class="btn addbtn my-2">Add</button>
@@ -39,15 +42,11 @@
 
     </tr>
 </table>
-                <!-- <input type="text" placeholder="What do you have planned?" name="todo" id="todo-item"> -->
-                <!-- <button type="submit" onclick="addItem()" class="btn addbtn my-2">Add</button> -->
-                <!-- <button type="submit" onclick="deleteAll()" class="btn deleteAllbtn">Delete All</button> -->
+
             </form>
 
-        <!-- </div> -->
-        <!-- <div class="d-flex justify-content-center align-i"> -->
-
-            <table id="table" border="1">
+<p >Your Task: <span id="countTask">0</span></p>
+            <table id="table" >
                 
             </table>
             <!-- </div> -->
